@@ -6,6 +6,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v2
+    
       # Installe java 8 sur l'agent
       - name: Set up JDK 8
         uses: actions/setup-java@v2
