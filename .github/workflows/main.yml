@@ -16,3 +16,4 @@ jobs:
       # Compile notre application
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
+        working-directory: ../../
