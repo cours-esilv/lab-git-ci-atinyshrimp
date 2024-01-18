@@ -1,6 +1,10 @@
 name: Custom Workflow for part 2
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+      - feature/jlapilus
 
 jobs:
   build:
