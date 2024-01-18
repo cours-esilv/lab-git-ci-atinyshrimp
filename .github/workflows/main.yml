@@ -43,6 +43,8 @@ jobs:
         with:
           name: my-app-1.0
           path: target/*
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
       # Installe la commande docker sur l'agent
       - name: Install Docker
